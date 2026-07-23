@@ -17,6 +17,8 @@
 | --- | --- |
 | ![Weekend 粉蓝周末](qa/evidence/qa-window-weekend.png) | ![INVU 月影女神](qa/evidence/qa-window-invu.png) |
 
+预览图取自 v1.1.1 实际发行程序内置的角色关键帧。
+
 ## 两套皮肤
 
 - `built-in`：Weekend 粉蓝周末（内置），r15 专属动作为“粉蓝周末星光亮相”。
