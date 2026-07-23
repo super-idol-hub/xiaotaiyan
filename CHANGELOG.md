@@ -19,7 +19,7 @@
 
 ## v1.0.0 小泰妍双造型脚手架
 
-- 产品身份更新为“小泰妍”，互动角色为金泰妍，开发者标识为“个人非商业开发”。
+- 产品身份更新为“小泰妍”，互动角色为金泰妍，开发者统一为 `Anbunensi`。
 - 内置造型更新为“Weekend 粉蓝周末”。
 - 官方外置皮肤清单仅包含 `taeyeon-invu`，显示名“INVU 月影女神”，r15 专属动作名“月影侧身行礼”。
 - 主程序输出更新为 `source/outputs/taeyeon-standalone-4k-v1/小泰妍.exe`，皮肤输出更新为 `source/outputs/taeyeon-skins/`，完整包更新为 `小泰妍-完整包.zip`。

@@ -19,10 +19,10 @@ using Microsoft.Win32;
 using FormsTimer = System.Windows.Forms.Timer;
 
 [assembly: AssemblyTitle("小泰妍")]
-[assembly: AssemblyDescription("小泰妍｜金泰妍 4K 写实粉丝向桌面互动角色｜双内置皮肤 v1.1.1｜开发者：个人非商业开发")]
+[assembly: AssemblyDescription("小泰妍｜金泰妍 4K 写实粉丝向 Windows 互动角色｜双内置造型 v1.1.1｜开发者：Anbunensi")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("小泰妍")]
-[assembly: AssemblyTrademark("开发者：个人非商业开发")]
+[assembly: AssemblyTrademark("开发者：Anbunensi")]
 [assembly: AssemblyCopyright("仅供粉丝非商用使用")]
 [assembly: AssemblyVersion("1.1.1.0")]
 [assembly: AssemblyFileVersion("1.1.1.0")]
@@ -803,14 +803,14 @@ namespace Taeyeon.Standalone
             packs.Add(new SkinPack(
                 "built-in",
                 "Weekend 粉蓝周末（内置）",
-                "个人非商业开发",
+                "Anbunensi",
                 string.Empty,
                 true,
                 "粉蓝周末星光亮相"));
             packs.Add(new SkinPack(
                 "taeyeon-invu",
                 "INVU 月影女神（内置）",
-                "个人非商业开发",
+                "Anbunensi",
                 string.Empty,
                 FrameResource.InvuResourceName,
                 string.Empty,
@@ -2346,21 +2346,21 @@ namespace Taeyeon.Standalone
                 SkinPack linanSwingProbe = new SkinPack(
                     LinanSwingContract.SkinId,
                     "QA Linan",
-                    "个人非商业开发",
+                    "Anbunensi",
                     string.Empty,
                     false,
                     "荡秋千");
                 SkinPack nonLinanExclusiveProbe = new SkinPack(
                     "huang-chengzi",
                     "QA Other",
-                    "个人非商业开发",
+                    "Anbunensi",
                     string.Empty,
                     false,
                     "专属动作");
                 SkinPack noExclusiveActionProbe = new SkinPack(
                     LinanSwingContract.SkinId,
                     "QA Linan disabled",
-                    "个人非商业开发",
+                    "Anbunensi",
                     string.Empty,
                     false,
                     string.Empty);
@@ -3091,7 +3091,7 @@ namespace Taeyeon.Standalone
             builder.AppendLine("  \"ok\": " + (ok ? "true" : "false") + ",");
             builder.AppendLine("  \"application\": \"小泰妍\",");
             builder.AppendLine("  \"version\": \"1.1.1\",");
-            builder.AppendLine("  \"developer\": \"个人非商业开发\",");
+            builder.AppendLine("  \"developer\": \"Anbunensi\",");
             builder.AppendLine("  \"frameArchiveEmbedded\": true,");
             builder.AppendLine("  \"frameArchiveResource\": \"" + FrameResource.ResourceName + "\",");
             builder.AppendLine("  \"archiveBytes\": " + archiveBytes + ",");
@@ -4206,7 +4206,7 @@ namespace Taeyeon.Standalone
             {
                 MessageBox.Show(
                     BuildUsageText(
-                    "左键拖动：拖动达到阈值后她会吓一跳；被拖动时保持受惊，松手后会叉腰跺脚生气\n双击：挥手\n鼠标滚轮：调整大小\n鼠标靠近一定范围：她会平滑看向鼠标；移远后立即回到只眨眼的普通待机\n安静待机：普通眨眼为主，静止一段时间后会随机表演；内置 Weekend 另有卖萌、大笑、哭和“粉蓝周末星光亮相”，内置 INVU 另有“月影侧身行礼”\n坐下玩手机：坐下后会一直玩手机，左键点她才会收起手机并起身\n侧躺入睡：她会一直安睡，z/Z 从头顶向上飘；左键点她会伸懒腰后起身\n切换皮肤：右键打开“皮肤”，可在“Weekend 粉蓝周末（内置）”和“INVU 月影女神（内置）”之间直接切换；人物会分层伪3D转身，在半圈中由头到脚完成变装并定格，选择会在重启后保留\n右键：可手动预览待机动作，或调整皮肤、公开动态提醒和设置\nCtrl+Q：退出\n\n公开动态提醒沿用基线开关与低频轮询行为，约每10分钟检查一次预配置的金泰妍相关新浪公开页面，首次只建立基线。公开页面可能延迟，也可能因页面改版而暂时失效；断网时不会弹出错误。该功能不代表金泰妍官方账号，可在右键菜单关闭。\n\n【可选皮肤包接口】\n两套指定皮肤已经内嵌在本 EXE；仍可在程序同级创建 skins\\<id>\\skin.xml 和 frames.zip 添加第三方皮肤。skin.xml 根元素格式为 <skin apiVersion=\"1\" id=\"...\" name=\"...\" developer=\"...\" archive=\"frames.zip\" exclusiveAction=\"可选菜单名\"/>；exclusiveAction 非空时 r15 作为该外置皮肤专属动作。帧文件使用 r00/c00.png 的固定命名、相同动作行映射和 528×808 尺寸。缺帧、路径异常或尺寸不符的皮肤会被静默跳过。\n\n开发者：个人非商业开发\n\n【免责声明】\n本程序由个人独立开发，仅供金泰妍粉丝个人欣赏、交流与非商业使用，纯属为爱发电。人物姓名、肖像、形象及相关素材的权利归金泰妍本人及相应权利方所有。本程序为非官方作品，与金泰妍本人、工作室、经纪机构及品牌方无官方关联，也不代表已获得其授权。禁止售卖、收费分发、广告引流、商业推广、二次商用、冒用官方名义，或用于侵犯肖像权、名誉权及其他合法权益。若权利方认为内容不妥，请停止传播并联系开发者处理。",
+                    "左键拖动：拖动达到阈值后她会吓一跳；被拖动时保持受惊，松手后会叉腰跺脚生气\n双击：挥手\n鼠标滚轮：调整大小\n鼠标靠近一定范围：她会平滑看向鼠标；移远后立即回到只眨眼的普通待机\n安静待机：普通眨眼为主，静止一段时间后会随机表演；内置 Weekend 另有卖萌、大笑、哭和“粉蓝周末星光亮相”，内置 INVU 另有“月影侧身行礼”\n坐下玩手机：坐下后会一直玩手机，左键点她才会收起手机并起身\n侧躺入睡：她会一直安睡，z/Z 从头顶向上飘；左键点她会伸懒腰后起身\n切换皮肤：右键打开“皮肤”，可在“Weekend 粉蓝周末（内置）”和“INVU 月影女神（内置）”之间直接切换；人物会分层伪3D转身，在半圈中由头到脚完成变装并定格，选择会在重启后保留\n右键：可手动预览待机动作，或调整皮肤、公开动态提醒和设置\nCtrl+Q：退出\n\n公开动态提醒沿用基线开关与低频轮询行为，约每10分钟检查一次预配置的金泰妍相关新浪公开页面，首次只建立基线。公开页面可能延迟，也可能因页面改版而暂时失效；断网时不会弹出错误。该功能不代表金泰妍官方账号，可在右键菜单关闭。\n\n【可选皮肤包接口】\n两套指定皮肤已经内嵌在本 EXE；仍可在程序同级创建 skins\\<id>\\skin.xml 和 frames.zip 添加第三方皮肤。skin.xml 根元素格式为 <skin apiVersion=\"1\" id=\"...\" name=\"...\" developer=\"...\" archive=\"frames.zip\" exclusiveAction=\"可选菜单名\"/>；exclusiveAction 非空时 r15 作为该外置皮肤专属动作。帧文件使用 r00/c00.png 的固定命名、相同动作行映射和 528×808 尺寸。缺帧、路径异常或尺寸不符的皮肤会被静默跳过。\n\n开发者：Anbunensi\n\n【免责声明】\n本程序由 Anbunensi 独立、非商业开发，仅供金泰妍粉丝个人欣赏与交流，纯属为爱发电。人物姓名、肖像、形象及相关素材的权利归金泰妍本人及相应权利方所有。本程序为非官方作品，与金泰妍本人、工作室、经纪机构及品牌方无官方关联，也不代表已获得其授权。禁止售卖、收费分发、广告引流、商业推广、二次商用、冒用官方名义，或用于侵犯肖像权、名誉权及其他合法权益。若权利方认为内容不妥，请停止传播并联系开发者处理。",
                     string.Empty),
                     "小泰妍",
                     MessageBoxButtons.OK,

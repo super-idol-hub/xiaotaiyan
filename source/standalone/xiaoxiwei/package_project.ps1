@@ -43,31 +43,31 @@ $source = Join-Path $project 'source'
 $qa = Join-Path $project 'qa'
 $history = Join-Path $project 'releases\历史版本'
 Ensure-Directory $history
-$previousV3 = Join-Path $release '小泰妍桌宠-v3.0-增强版.exe'
+$previousV3 = Join-Path $release '小泰妍-Windows互动角色-v3.0-增强版.exe'
 if (Test-Path -LiteralPath $previousV3 -PathType Leaf) {
-    Copy-Item -LiteralPath $previousV3 -Destination (Join-Path $history '小泰妍桌宠-v3.0-增强版.exe') -Force
+    Copy-Item -LiteralPath $previousV3 -Destination (Join-Path $history '小泰妍-Windows互动角色-v3.0-增强版.exe') -Force
 }
-$previousV301 = Join-Path $release '小泰妍桌宠-v3.0.1-增强版.exe'
+$previousV301 = Join-Path $release '小泰妍-Windows互动角色-v3.0.1-增强版.exe'
 if (Test-Path -LiteralPath $previousV301 -PathType Leaf) {
-    Copy-Item -LiteralPath $previousV301 -Destination (Join-Path $history '小泰妍桌宠-v3.0.1-增强版.exe') -Force
+    Copy-Item -LiteralPath $previousV301 -Destination (Join-Path $history '小泰妍-Windows互动角色-v3.0.1-增强版.exe') -Force
 }
-$previousV302 = Join-Path $release '小泰妍桌宠-v3.0.2-增强版.exe'
+$previousV302 = Join-Path $release '小泰妍-Windows互动角色-v3.0.2-增强版.exe'
 if (Test-Path -LiteralPath $previousV302 -PathType Leaf) {
-    Copy-Item -LiteralPath $previousV302 -Destination (Join-Path $history '小泰妍桌宠-v3.0.2-增强版.exe') -Force
+    Copy-Item -LiteralPath $previousV302 -Destination (Join-Path $history '小泰妍-Windows互动角色-v3.0.2-增强版.exe') -Force
 }
-$previousV303 = Join-Path $release '小泰妍桌宠-v3.0.3-增强版.exe'
+$previousV303 = Join-Path $release '小泰妍-Windows互动角色-v3.0.3-增强版.exe'
 if (Test-Path -LiteralPath $previousV303 -PathType Leaf) {
-    Copy-Item -LiteralPath $previousV303 -Destination (Join-Path $history '小泰妍桌宠-v3.0.3-增强版.exe') -Force
+    Copy-Item -LiteralPath $previousV303 -Destination (Join-Path $history '小泰妍-Windows互动角色-v3.0.3-增强版.exe') -Force
 }
-$previousV304NamedAsPet = Join-Path $release '小泰妍桌宠-v3.0.4-增强版.exe'
-if (Test-Path -LiteralPath $previousV304NamedAsPet -PathType Leaf) {
-    Copy-Item -LiteralPath $previousV304NamedAsPet -Destination (Join-Path $history '小泰妍桌宠-v3.0.4-增强版.exe') -Force
+$previousV304Legacy = Join-Path $release '小泰妍-Windows互动角色-v3.0.4-增强版.exe'
+if (Test-Path -LiteralPath $previousV304Legacy -PathType Leaf) {
+    Copy-Item -LiteralPath $previousV304Legacy -Destination (Join-Path $history '小泰妍-Windows互动角色-v3.0.4-增强版.exe') -Force
 }
 $currentLatest = Join-Path $release '小泰妍.exe'
 if (Test-Path -LiteralPath $currentLatest -PathType Leaf) {
     $currentLatestVersion = (Get-Item -LiteralPath $currentLatest).VersionInfo.FileVersion
     if ($currentLatestVersion -and $currentLatestVersion.StartsWith('3.0.5', [StringComparison]::OrdinalIgnoreCase)) {
-        Copy-Item -LiteralPath $currentLatest -Destination (Join-Path $history '小泰妍桌宠-v3.0.5-增强版.exe') -Force
+        Copy-Item -LiteralPath $currentLatest -Destination (Join-Path $history '小泰妍-Windows互动角色-v3.0.5-增强版.exe') -Force
     }
 }
 Reset-ProjectDirectory $release
@@ -155,7 +155,7 @@ $historicalExecutables = foreach ($relativePath in $historicalRelativePaths) {
 $summary = [ordered]@{
     schemaVersion = 1
     packagedAt = [DateTimeOffset]::Now.ToString('o')
-    developer = '个人非商业开发'
+    developer = 'Anbunensi'
     executable = [ordered]@{
         path = 'releases\最新版\小泰妍.exe'
         bytes = (Get-Item -LiteralPath $releaseExe).Length
