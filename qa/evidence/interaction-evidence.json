@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "executableSha256": "9add95fa898abc03bcae110e42a6614eb097e8284949e4c9f8ed14802e2bb616",
+  "selfTestReport": "source/outputs/taeyeon-standalone-4k-v1/self-test-report.json",
+  "interactions": {
+    "drag": {
+      "result": "pass",
+      "contractValid": true,
+      "activationPixelsAtDefaultScale": 9,
+      "releaseAction": "angry stomp",
+      "evidence": "qa/evidence/interactions/drag-release-angry.png"
+    },
+    "doubleClick": {
+      "result": "pass",
+      "action": "wave",
+      "doubleClickWavePreserved": true,
+      "evidence": "qa/evidence/interactions/double-click-wave.gif"
+    },
+    "mouseLookExit": {
+      "result": "pass",
+      "usesEntryExitHysteresis": true,
+      "farPointerReturnsBlinkOnlyIdle": true,
+      "evidence": "qa/evidence/interactions/mouse-look.png"
+    },
+    "phone": {
+      "result": "pass",
+      "persistentUntilClick": true,
+      "clickExitFrames": "6-7",
+      "evidence": "qa/evidence/interactions/phone.png"
+    },
+    "sleep": {
+      "result": "pass",
+      "persistentUntilClick": true,
+      "sleepFrame": 4,
+      "wakeFrames": "5-7",
+      "particlesHeadAnchored": true,
+      "evidence": "qa/evidence/interactions/sleep.png"
+    },
+    "skinTransition": {
+      "result": "pass",
+      "atomicCacheSwap": true,
+      "renderValid": true,
+      "totalStages": 60,
+      "evidence": "qa/evidence/interactions/skin-transition.png"
+    },
+    "offline": {
+      "result": "pass",
+      "method": "--qa-window disables the optional public-feed monitor and exercises the full runtime for 10000 ms",
+      "cleanExitCode": 0,
+      "evidence": "qa/evidence/windows-qa.json"
+    }
+  },
+  "motionInterpolationEvidence": "qa/evidence/interactions/motion-interpolation.png",
+  "result": "pass"
+}

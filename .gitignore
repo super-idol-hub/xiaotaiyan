@@ -1,0 +1,29 @@
+# GitHub 仓库只保存源码与文档。高清成品放在 GitHub Releases。
+releases/
+
+# 用户提供、公开参考及生成中间素材不进入源码仓库。
+source/user-materials/
+source/work/
+
+# 构建生成物与大体积帧包。
+source/.build-tools/
+source/outputs/
+source/小泰妍/
+source/小泰妍-双EXE版/
+source/小泰妍-双EXE版.zip
+source/小泰妍-双皮肤单EXE版/
+source/小泰妍-双皮肤单EXE版.zip
+source/standalone/xiaoxiwei/frames-4k.zip
+source/standalone/xiaoxiwei/bin/
+source/standalone/xiaoxiwei/obj/
+source/standalone/xiaoxiwei/__pycache__/
+source/standalone/xiaoxiwei/*.exe
+source/standalone/xiaoxiwei/*.dll
+source/standalone/xiaoxiwei/*.pdb
+
+*.pyc
+*.tmp
+*.log
+baseline-proof.json
+Thumbs.db
+Desktop.ini

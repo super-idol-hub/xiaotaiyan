@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "windowsVersion": "Microsoft Windows NT 10.0.26200.0",
+  "dotNetFrameworkVersion": "4.8.09221 (Release 533509)",
+  "executablePath": "source/outputs/taeyeon-standalone-4k-v1/小泰妍.exe",
+  "executableSha256": "9add95fa898abc03bcae110e42a6614eb097e8284949e4c9f8ed14802e2bb616",
+  "launchMethod": "Start-Process with --qa-window 10000; wait for process exit",
+  "started": true,
+  "visible": true,
+  "cleanExit": true,
+  "additionalExecutables": [
+    {
+      "path": "source/outputs/taeyeon-invu-standalone/小泰妍-INVU.exe",
+      "sha256": "4ec147d0239010501a46c8382d7f9f5242fbf69a20b16d6f68f306250c0dfd55",
+      "arguments": ["--qa-window", "10000"],
+      "exitCode": 0,
+      "result": "pass"
+    }
+  ],
+  "result": "pass"
+}

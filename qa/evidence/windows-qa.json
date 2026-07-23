@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "platform": "Windows",
+  "date": "2026-07-22",
+  "tests": [
+    {
+      "executable": "source/outputs/taeyeon-standalone-4k-v1/小泰妍.exe",
+      "arguments": ["--qa-window", "10000"],
+      "exitCode": 0,
+      "autoExercise": "layered window render, animation timers, skin-transition prepare/spin/reveal/atomic-swap/cleanup"
+    },
+    {
+      "executable": "source/outputs/taeyeon-invu-standalone/小泰妍-INVU.exe",
+      "arguments": ["--qa-window", "10000"],
+      "exitCode": 0,
+      "autoExercise": "layered window render, animation timers, skin-transition prepare/spin/reveal/atomic-swap/cleanup"
+    }
+  ],
+  "result": "pass"
+}

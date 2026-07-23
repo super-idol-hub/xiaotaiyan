@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-22T14:17:45.7457829+08:00",
+  "result": "pass",
+  "applicationVersion": "1.1.0.0",
+  "delivery": {
+    "executable": "source\\小泰妍-双皮肤单EXE版\\小泰妍.exe",
+    "bytes": 74762752,
+    "sha256": "f233e2ad7d0d41b82fa1ffbc698d771aec0b99ad1129f70e15fd5a6dea835c9d",
+    "archive": "source\\小泰妍-双皮肤单EXE版.zip",
+    "archiveBytes": 72561048,
+    "archiveSha256": "77d67169dabba41c62ec7e78018c1928510494628a958f532fbc9c1ecc536858",
+    "archiveEntries": [
+      "小泰妍.exe",
+      "使用说明.md",
+      "SHA256SUMS.txt"
+    ],
+    "executableEntryCount": 1,
+    "externalSkinDirectoryPresent": false
+  },
+  "embeddedResources": [
+    "Taeyeon.Standalone.Frames.zip",
+    "Taeyeon.Standalone.Invu.Frames.zip"
+  ],
+  "skinMenu": {
+    "itemCount": 2,
+    "items": [
+      {
+        "id": "built-in",
+        "label": "Weekend 粉蓝周末（内置）"
+      },
+      {
+        "id": "taeyeon-invu",
+        "label": "INVU 月影女神（内置）"
+      }
+    ],
+    "selectionPersistenceEnabled": true
+  },
+  "qa": {
+    "selfTestExitCode": 0,
+    "windowsQaExitCode": 0,
+    "selfTestOk": true,
+    "embeddedSkinCatalogValid": true,
+    "crossSkinTransitionRenderValid": true,
+    "motionFieldLoaded": true,
+    "ghostFreeSinglePoseOwner": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 2,
+  "status": "built-and-verified",
+  "packagedAt": "2026-07-23T10:56:28+08:00",
+  "product": {
+    "displayName": "小泰妍",
+    "idol": "金泰妍",
+    "developer": "个人非商业开发",
+    "version": "1.1.1",
+    "embeddedLooks": [
+      "Weekend 粉蓝周末",
+      "INVU 月影女神"
+    ]
+  },
+  "baseline": {
+    "commit": "e9b77f9bb106c8e83c3977e853b7f9eba9e6c1bc",
+    "release": "v3.0.6-fixed-baseline",
+    "deliveryOverride": "User explicitly requires both completed skins inside one executable and switchable from the skin menu."
+  },
+  "source": {
+    "standaloneDirectory": "source\\standalone\\xiaoxiwei",
+    "weekendRun": "source\\work\\taeyeon\\weekend-realistic-run",
+    "invuRun": "source\\work\\taeyeon\\invu-realistic-run",
+    "standaloneOutput": "source\\outputs\\taeyeon-two-skins-one-exe"
+  },
+  "singleExecutableRelease": {
+    "executable": {
+      "path": "source\\小泰妍-双皮肤单EXE版\\小泰妍.exe",
+      "bytes": 75317760,
+      "sha256": "d1d5bc3e76161f837ba2a256b5027483229738c43a71a5040a20515831b87ca9"
+    },
+    "archive": {
+      "path": "source\\小泰妍-双皮肤单EXE版.zip",
+      "bytes": 73115480,
+      "sha256": "74635e38e24718c454e6a2d22be7daee66d592e9637c31659088d2d70f551966"
+    },
+    "executableEntryCount": 1,
+    "externalAssetsRequired": false
+  },
+  "skins": [
+    {
+      "id": "built-in",
+      "name": "Weekend 粉蓝周末（内置）",
+      "resource": "Taeyeon.Standalone.Frames.zip",
+      "frames": 176,
+      "exclusiveAction": "粉蓝周末星光亮相"
+    },
+    {
+      "id": "taeyeon-invu",
+      "name": "INVU 月影女神（内置）",
+      "resource": "Taeyeon.Standalone.Invu.Frames.zip",
+      "frames": 176,
+      "exclusiveAction": "月影侧身行礼"
+    }
+  ],
+  "qa": {
+    "selfTestOk": true,
+    "windowsQaExitCode": 0,
+    "embeddedSkinCatalogValid": true,
+    "crossSkinTransitionRenderValid": true,
+    "motionFieldLoaded": true,
+    "ghostFreeSinglePoseOwner": true
+  },
+  "copiedUserMaterials": 0,
+  "missingUserMaterials": []
+}

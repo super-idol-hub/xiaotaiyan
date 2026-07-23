@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "atlas": "source/work/taeyeon/weekend-realistic-run/final/spritesheet-extended.png",
+  "blindValidation": "source/work/taeyeon/weekend-realistic-run/qa/direction-blind-validation.json",
+  "hardGates": {
+    "090_vs_270": "pass",
+    "000_vs_180": "pass"
+  },
+  "reviewGateNotes": [
+    "Three diagonal A/B pairs produced majority reversals in the unlabeled sheet.",
+    "Manual review of the labeled full-size direction sheet confirms the authored clockwise ordering and continuous head orientation for all 16 slots.",
+    "No hard-gate errors or unconfirmed cells remain; the review-only diagonal warnings are accepted."
+  ],
+  "continuity": {
+    "alphaHoles": 0,
+    "maximumCenterDeltaPixels": 1.8027756377319946,
+    "maximumAreaRatio": 1.202880288028803
+  },
+  "result": "pass-with-reviewed-diagonal-warnings"
+}
