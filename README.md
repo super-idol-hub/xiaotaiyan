@@ -61,7 +61,7 @@
 
 ## 技术基础
 
-项目在 [super-idol-hub/xiaoxiwei](https://github.com/super-idol-hub/xiaoxiwei) 的 Windows 透明角色运行时基础上开发，保留 24 行、176 帧动作契约、单主体运动网格补间、拖拽与待机状态机、换肤预热和安全校验；角色造型、产品身份、内置皮肤资源、动作画面与发行包均为小泰妍项目独立内容。
+项目遵循 [偶像 Windows 互动角色开发规范](https://github.com/super-idol-hub/idol-windows-character-guides)，统一采用其中的产品命名、动作与皮肤契约、交互行为、质量验证、版权边界和发布要求。
 
 ## 免责声明
 
