@@ -94,7 +94,7 @@ Copy-Item -LiteralPath (Join-Path $project 'README.md') -Destination (Join-Path 
 Copy-Item -LiteralPath (Join-Path $project 'docs\使用说明.md') -Destination (Join-Path $release '使用说明.md') -Force
 Copy-Item -LiteralPath (Join-Path $project 'docs\皮肤包接口.md') -Destination (Join-Path $release '皮肤包接口.md') -Force
 
-Copy-DirectoryContents (Join-Path $workspace 'standalone\xiaoxiwei') (Join-Path $source 'standalone\xiaoxiwei')
+Copy-DirectoryContents (Join-Path $workspace 'standalone\xiaotaiyan') (Join-Path $source 'standalone\xiaotaiyan')
 Copy-DirectoryContents (Join-Path $workspace 'work\taeyeon') (Join-Path $source 'work\taeyeon')
 Copy-DirectoryContents (Join-Path $workspace 'outputs\taeyeon-standalone-4k-v1') (Join-Path $qa 'built-in-and-runtime')
 

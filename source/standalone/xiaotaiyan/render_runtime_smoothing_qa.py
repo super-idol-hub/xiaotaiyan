@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render deterministic GIF QA for XiaoXiWeiPet runtime tweening.
+"""Render deterministic GIF QA for XiaoTaeyeon runtime tweening.
 
 The executable keeps compact 528x808 authored keyframes and synthesizes its
 in-between display stages at runtime.  This script mirrors that presentation
@@ -122,18 +122,18 @@ CONTACT_SHEET_SAMPLE_COUNT = 8
 def parse_args() -> argparse.Namespace:
     project_root = Path(__file__).resolve().parents[2]
     parser = argparse.ArgumentParser(
-        description="Render dark-background GIFs that mirror XiaoXiWeiPet runtime smoothing."
+        description="Render dark-background GIFs that mirror XiaoTaeyeon runtime smoothing."
     )
     parser.add_argument(
         "--frames-root",
         type=Path,
-        default=project_root / "work" / "xiaoxiwei" / "standalone-4k" / "frames",
+        default=project_root / "work" / "taeyeon" / "standalone-4k" / "frames",
         help="Directory containing rNN/cNN.png 528x808 keyframes.",
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=project_root / "work" / "xiaoxiwei" / "standalone-4k" / "runtime-smoothing-qa",
+        default=project_root / "work" / "taeyeon" / "standalone-4k" / "runtime-smoothing-qa",
         help="Destination for GIFs and runtime-smoothing-qa-report.json.",
     )
     parser.add_argument(
@@ -817,7 +817,7 @@ def main() -> int:
                 "GIF delays use a minimum 20 ms clock and 10 ms quantization; "
                 "gifPreviewDurationMs can therefore be slightly longer than the executable's timer cadence."
             ),
-            "runtimeCadenceAuthority": "XiaoXiWeiPet executable self-test",
+            "runtimeCadenceAuthority": "XiaoTaeyeon executable self-test",
             "linanPersistentSwingManualOnly": args.action_profile == "external-v306-linan",
         },
         "animationCount": len(entries),

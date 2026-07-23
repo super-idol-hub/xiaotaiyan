@@ -18,7 +18,7 @@
     "deliveryOverride": "User explicitly requires both completed skins inside one executable and switchable from the skin menu."
   },
   "source": {
-    "standaloneDirectory": "source\\standalone\\xiaoxiwei",
+    "standaloneDirectory": "source\\standalone\\xiaotaiyan",
     "weekendRun": "source\\work\\taeyeon\\weekend-realistic-run",
     "invuRun": "source\\work\\taeyeon\\invu-realistic-run",
     "standaloneOutput": "source\\outputs\\taeyeon-two-skins-one-exe"

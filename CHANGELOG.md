@@ -23,7 +23,7 @@
 - 内置造型更新为“Weekend 粉蓝周末”。
 - 官方外置皮肤清单仅包含 `taeyeon-invu`，显示名“INVU 月影女神”，r15 专属动作名“月影侧身行礼”。
 - 主程序输出更新为 `source/outputs/taeyeon-standalone-4k-v1/小泰妍.exe`，皮肤输出更新为 `source/outputs/taeyeon-skins/`，完整包更新为 `小泰妍-完整包.zip`。
-- 构建输入更新为 `source/work/taeyeon/weekend-realistic-run/`；固定内部目录 `source/standalone/xiaoxiwei/` 保持不变。
+- 构建输入更新为 `source/work/taeyeon/weekend-realistic-run/`；运行时源码目录统一为 `source/standalone/xiaotaiyan/`。
 - `MIGRATION-001`：将首版历史包清单设为空，历史归档流程本身保持不变，且不会复制小曦薇历史发行。
 - 公开动态提醒改为金泰妍相关公开页面与通用文案；未新增网络提供方，启用状态、轮询周期、超时、大小上限、去重、首次基线、退避和可信 URL 校验逻辑保持不变。
 - 新增 `identity-replacements.json` 与 `baseline-proof.json`，记录可逆身份替换、固定基线和冻结契约。

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and package a XiaoXiWei external skin from rebuilt 4K frames."""
+"""Validate and package a XiaoTaeyeon external skin from rebuilt 4K frames."""
 
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ SAFE_ID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,63}$")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Package a validated XiaoXiWei skin.")
+    parser = argparse.ArgumentParser(description="Package a validated XiaoTaeyeon skin.")
     parser.add_argument("--frames-root", required=True, type=Path)
     parser.add_argument("--motion-root", type=Path)
     parser.add_argument("--output-root", required=True, type=Path)

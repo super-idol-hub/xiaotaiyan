@@ -5,8 +5,8 @@ from PIL import Image
 
 PROJECT = Path(__file__).resolve().parent
 WORKSPACE = PROJECT.parent.parent
-ATLAS = WORKSPACE / "work" / "xiaoxiwei" / "realistic-run" / "final" / "spritesheet-extended.png"
-OUTPUT = PROJECT / "xiaoxiwei.ico"
+ATLAS = WORKSPACE / "work" / "taeyeon" / "weekend-realistic-run" / "final" / "spritesheet-extended.png"
+OUTPUT = PROJECT / "xiaotaiyan.ico"
 
 
 with Image.open(ATLAS) as source:

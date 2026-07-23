@@ -50,7 +50,7 @@
 
 ## 文件夹
 
-- `source/standalone/xiaoxiwei/`：运行时源码与构建脚本；该目录名为基线兼容路径，不代表产品名称。
+- `source/standalone/xiaotaiyan/`：小泰妍运行时源码与构建脚本。
 - `docs/`：使用说明、动作与素材说明、皮肤包接口。
 - `qa/evidence/`：交互、尺寸、换肤和双内置皮肤验证证据。
 - `skin-pack-template/`：可选第三方皮肤包模板。

@@ -47,7 +47,7 @@ DIRECT_GAZE_ROWS = {9, 10}
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Build XiaoXiWei motion meshes")
+    parser = argparse.ArgumentParser(description="Build XiaoTaeyeon motion meshes")
     parser.add_argument("--frames-root", required=True, type=Path)
     parser.add_argument("--motion-root", required=True, type=Path)
     parser.add_argument("--report", required=True, type=Path)
